@@ -1,0 +1,142 @@
+
+
+    <script src="https://www.arikair.com/js/jquery.min.js"></script>
+    <script src="https://book-flyaero.crane.aero/web/FlightSearchAPI?language=en"></script>
+
+
+
+
+   <script type="text/javascript">
+    // FlightSearch object is initialized within the new Document Ready Osibanjo LKMZ44
+    $(document).ready(function(){
+        // Please note that window.flightSearch is a global variable
+
+        try{
+
+
+        window.flightSearch = new FlightSearch();
+
+            // Default HTML standard for date is yyyy-MM-dd, but other versions may be preferred for user experience
+            flightSearch.dateFormat = "dd/MM/yyyy";  
+            /*Optional parameters will be inserted here
+            flightSearch.parameterName = "value";*/
+           /* flightSearch.actionURL = " http://atc-stage.crane.aero/web/RezvEntry.xhtml";*/
+            /*flightSearch.actionURL = "http://atc-stage.crane.aero/web/AvailabilityResults.xhtml";*/
+
+           flightSearch.actionURL="https://book-flyaero.crane.aero/web/RezvEntry.xhtml";
+
+            // Initializing the script for the flight search panel
+            flightSearch.init();
+        }
+        catch(e){
+            console.log("could not communicate");
+        }
+        });
+    </script>
+</head>
+
+<body>
+    
+
+
+
+</body>
+
+
+	<!-- BEGIN: SEARCH SECTION -->
+
+
+								
+		
+							
+					
+					<!-- END: CATEGORY TAB -->
+
+					<!-- BEGIN: TAB PANELS -->
+					<div class="tab-content">
+							<!-- BEGIN: FLIGHT SEARCH -->
+							<div role="tabpanel" class="tab-pane active" id="flight">
+							
+
+
+								<div class="col-md-12 product-search-title">Book Flight Tickets</div>
+									<div id="tripTypeArea">
+                           <div class="col-md-12 search-col-padding">
+                            <label for="tripType:1">Round Trip</label>
+                            <input type="radio" id="tripType:1" value="ROUND_TRIP" onclick="flightSearch.selectTripType(this.value)"> 
+                            <label for="tripType:0">One Way</label>
+                            <input type="radio" id="tripType:0" value="ONE_WAY"    onclick="flightSearch.selectTripType(this.value)"> 
+                        </div>
+                    </div>
+
+<div class="clearfix"></div>
+
+                        <div id="depPortArea" class="col-md-6 col-sm-6 search-col-padding">
+                        	<label>Flying From</label>
+										<div class="input-group">
+											            <span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                            <select id="depPort" placeholder="From" class="form-control" onchange="flightSearch.selectDepPort(this.value)">
+                            </select>
+                
+										</div>
+                        </div>
+
+                        <div id="arrPortArea" class="col-md-6 col-sm-6 search-col-padding">
+                        	<label>Flying To</label>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-map-marker fa-fw"></i></span>
+                            <select id="arrPort" class="form-control" placeholder="To" onchange="flightSearch.selectArrPort(this.value)">
+                            </select>
+                        </div>
+                        </div>    
+						
+<div class="clearfix"></div>
+
+                        
+ <div id="departureDateArea" class="col-md-6 col-sm-6 search-col-padding">
+                        	<label>Departure Date</label>
+										<div class="input-group date datepicker" >
+											  <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+                            </span>
+                            <input type='text' class="form-control" id="departureDate" format="dd/MM/yyyy" autocomplete="off" onchange="flightSearch.selectDepartureDate(this.value); $('#returnDate').calendarsPicker('option', 'minDate', this.value) ">
+                        
+                        </div>
+                        </div>
+
+                        <div id="returnDateArea" class='col-md-6 col-sm-6 search-col-padding'>
+                        	<label>Return Date</label>
+                        	<div class="input-group date datepicker">
+                        		  <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                            <input type='text' class="form-control" id="returnDate" format="dd/MM/yyyy" autocomplete="off" sonchange="flightSearch.selectReturnDate(this.value); $('#departureDate').calendarsPicker('option', 'maxDate', this.value)">
+
+                          
+                            </div>
+                        </div>
+<div class="clearfix"></div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 search-col-padding" id="adultArea">
+                            	<label>Adult</label><br>
+                                <select placeholder="Adult" class="form-control" id="adult" ></select>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 search-col-padding" id="childArea">
+                            	<label>Child</label><br>
+                                <select placeholder="Child" class="form-control"  id="child"></select>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 search-col-padding" id="infantArea">
+                            	<label>Infant</label><br>
+                                <select placeholder="Infant" class="form-control"  id="infant"></select>
+                            </div>
+                        </div>
+<div class="clearfix"></div>
+<div class="row">
+                        <div id="btnSearchArea" class="col-md-12 search-col-padding" align="right">
+                            <input type="submit" class="search-button btn transition-effect" id="btnSearch" value="Flight Search" onclick="flightSearch.search()">
+                        </div>	
+                    </div>
+
+
+							</div>
