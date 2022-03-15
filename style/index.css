@@ -717,18 +717,6 @@ input.form-control {
     height: 56px;
 }
 
-/* .custom-file-input {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-     height: calc(1.5em + 0.75rem + 2px); 
-    height: 56px;
-    margin: 0;
-    opacity: 0;
-    border: 1px solid #DDE2E5;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-} */
 
 .custom-file-label {
     position: absolute;
@@ -764,6 +752,39 @@ input.form-control {
     border-left: inherit;
     border-radius: 0 8px 8px 0;
     border: 1px solid #DDE2E5;
+}
+
+.image_wrapper img {
+    /* border: 0.4px dashed #333; */
+}
+
+.contact {
+    background: #FAFAFA;
+}
+
+.contact form {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 5rem 4rem;
+}
+
+.contact_info h5 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #495057;
+}
+
+.contact_info p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #ACB5BD;
+}
+
+.contact_info a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #66B22E;
 }
 
 /*Footer styles*/
