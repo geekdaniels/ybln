@@ -43,6 +43,7 @@
                 "query-input": "required name=search_term_string"
             }
         }
+
     </script>
     <link rel="dns-prefetch" href="//s.w.org" />
 
@@ -50,12 +51,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/hamburger.css" />
     <link rel="stylesheet" href="style/index.css" />
+
 </head>
 
 <body>
@@ -65,16 +66,14 @@
                 <div class="row">
                     <div class="col-lg-10">
                         <p class="my-3 text-white font--12">
-                            <a href="mailto:info@yblnigeria.com" class="text-white"><i class="fa fa-envelope"
-                                    aria-hidden="true"></i>
+                            <a href="mailto:info@yblnigeria.com" class="text-white"><i class="fa fa-envelope" aria-hidden="true"></i>
                                 info@yblnigeria.com</a>
                         </p>
                     </div>
 
                     <div class="col-lg-2 text-right">
                         <p class="my-3 font--12">
-                            <a href="tel:+2347088473165" class="text-white"><i class="fa fa-phone"
-                                    aria-hidden="true"></i> +234 708
+                            <a href="tel:+2347088473165" class="text-white"><i class="fa fa-phone" aria-hidden="true"></i> +234 708
                                 847 3165</a>
                         </p>
                     </div>
@@ -85,11 +84,8 @@
         </div>
         <nav class="navbar active_nav navbar-expand-lg navbar-light py-md-0 fixd-top bg-white">
             <div class="container">
-                <a class="navbar-brand" href="https://yblnigeria.com"><img loading="lazy" src="images/logo.png"
-                        alt="yblnigeria Logo" class="" width="100" /></a>
-                <button class="hamburger hamburger--emphatic navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="/"><img loading="lazy" src="images/logo.png" alt="yblnigeria Logo" class="" width="100" /></a>
+                <button class="hamburger hamburger--emphatic navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
@@ -97,61 +93,37 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto landing-page">
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="/">ABOUT US</a>
+                            <a class="nav-link px-0" href="about-us.html">ABOUT US</a>
                         </li>
 
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="/">PROGRAMMES</a>
+                            <a class="nav-link px-0" href="programmes.html">PROGRAMMES</a>
                         </li>
 
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="/">JOB MARKET</a>
+                            <a class="nav-link px-0" href="jobs.html">JOB MARKET</a>
                         </li>
 
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="/">RESOURCES</a>
+                            <a class="nav-link px-0" href="resources.html">RESOURCES</a>
                         </li>
 
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0 active" href="/">BLOG</a>
+                            <a class="nav-link px-0" href="blogs.html">BLOG</a>
                         </li>
 
                         <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="nav-link px-0" href="/">EVENT</a>
+                            <a class="nav-link px-0 active" href="events.html">EVENT</a>
                         </li>
 
-                        <li class="dropdown nav-item mx-md-4 my-md-0 postion-relative">
-                            <a class="dropdown-toggle nav-link px-0" href="javascript:void(0)" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu py-0" aria-labelledby="dropdownMenuButton">
-                                <li class="nav-item px-2 px-lg-0">
-                                    <a class="dropdown-item nav-link text-dark font-13"
-                                        href="https://ciiang.com/who-we-are">Who we
-                                        are</a>
-                                </li>
-                                <div class="dropdown-divider my-0"></div>
-                                <li class="nav-item px-2 px-lg-0">
-                                    <a class="dropdown-item nav-link text-dark font-13"
-                                        href="https://ciiang.com/governance">Governance</a>
-                                </li>
-
-                                <!--<li class="nav-item px-2 px-lg-0">-->
-                                <!--    <a class="dropdown-item nav-link text-dark font-13" target="_blank"-->
-                                <!--href="/render-file/1603282773.pdf" >Practice Standards</a>-->
-                                <!--</li>-->
-                            </ul>
+                        <li class="nav-item mx-md-4 my-md-0 postion-relative d-lg-none">
+                            <a href="" class="nav-link px-0">Join Commuity</a>
                         </li>
 
-                        <!-- 
-            <li class="nav-item mx-md-4 my-md-0 postion-relative d-lg-none">
-              <a href="https://ciiang.com/login" class="nav-link px-0">Login</a>
-            </li>
+                        <li class="dropdown nav-item my-md-0 postion-relative d-none d-lg-block">
+                            <a target="_SELF" href="/" class="btn btn__primary text-uppercase p-3  px-5 ml-lg-4 my-2 d-block d-lg-inline text-uppercase">Join Community</a>
+                        </li>
 
-            <li class="nav-item mx-md-4 my-md-0 postion-relative d-lg-none">
-              <a href="https://ciiang.com/register" class="nav-link px-0">Create Account</a>
-            </li> -->
                     </ul>
                 </div>
             </div>
@@ -218,20 +190,16 @@
                     </div>
                     <ul class="list-inline mt-3">
                         <li class="list-inline-item mr-4">
-                            <a href="https://www.facebook.com/" target="_blank"><img src="/images/facebook.svg"
-                                    alt="follow on facebook" class="img-fluid"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="/images/facebook.svg" alt="follow on facebook" class="img-fluid"></a>
                         </li>
                         <li class="list-inline-item mr-4">
-                            <a href="https://www.instagram.com/" target="_blank"><img src="/images/instagram.svg"
-                                    alt="follow on Instagram" class="img-fluid"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="/images/instagram.svg" alt="follow on Instagram" class="img-fluid"></a>
                         </li>
                         <li class="list-inline-item mr-4">
-                            <a href="https://www.twitter.com/" target="_blank"><img src="/images/twitter.svg"
-                                    alt="follow on twitter" class="img-fluid"></a>
+                            <a href="https://www.twitter.com/" target="_blank"><img src="/images/twitter.svg" alt="follow on twitter" class="img-fluid"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in" target="_blank"><img src="/images/linkedin.svg"
-                                    alt="follow on linkedin" class="img-fluid"></a>
+                            <a href="https://www.linkedin.com/in" target="_blank"><img src="/images/linkedin.svg" alt="follow on linkedin" class="img-fluid"></a>
                         </li>
                     </ul>
 
@@ -270,8 +238,7 @@
                     <p class="footer__description">Subscribe to our newsletter.</p>
                     <form method="POST">
 
-                        <input required="" name="email" type="email" class="form-control"
-                            placeholder="Enter your email address">
+                        <input required="" name="email" type="email" class="form-control" placeholder="Enter your email address">
 
                         <button type="submit" class="btn btn__primary my-3">Subscribe</button>
 
@@ -300,11 +267,9 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 </script>
 
 </html>
