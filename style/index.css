@@ -66,6 +66,11 @@ nav .nav-link {
     font-weight: 700;
 }
 
+
+nav .nav-link.active {
+    color: #66B22E !important;
+}
+
 .collapse li:last-child {
     border-left: 1px solid #ACB5BD;
     padding-top: 5px
