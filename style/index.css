@@ -368,6 +368,8 @@ nav .nav-link.active {
 .our_media__card {
     padding: 180px 40px 10px;
     position: relative;
+    height: 40vh !important;
+    z-index: 2
 }
 
 .our_initiatives__card {
@@ -376,7 +378,7 @@ nav .nav-link.active {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff !important;
-    height: 100% !important;
+    height: 50vh !important;
     min-height: 100% !important;
     max-height: 100% !important;
 }
@@ -401,6 +403,7 @@ nav .nav-link.active {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0
 }
 
 .our_media__card p {
@@ -465,10 +468,15 @@ nav .nav-link.active {
     text-decoration: none;
 }
 
+.media_items {
+    z-index: 5;
+}
+
 .right_abstract {
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 0
 }
 
 .partners {
